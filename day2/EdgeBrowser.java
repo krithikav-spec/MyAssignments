@@ -6,7 +6,7 @@ public class EdgeBrowser {
 		// TODO Auto-generated method stub
 		//create new object to call  methods from Browser.java class
 		Browser obj = new Browser();
-	    obj.launchBrowser("chrome");
+	    obj.launchBrowser(" ");
 		obj.loadUrl();
 	}
 
