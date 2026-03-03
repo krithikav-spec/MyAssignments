@@ -43,7 +43,9 @@ public class HandlingWindows {
 		Thread.sleep(2000);
 		driver.switchTo().window(activeWindow.get(1));
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']")).click();
+		// driver.findElement(By.xpath("//div[@class='x-grid3-cell-inner
+		// x-grid3-col-partyId']")).click();
+		driver.findElement(By.xpath("(//a[contains(@class,'linktext')])[1]")).click();
 		// switch back to merge contact window
 		driver.switchTo().window(activeWindow.get(0));
 		// click on merge
@@ -51,13 +53,11 @@ public class HandlingWindows {
 		// handling alert- switch focus to alert
 		Alert alert1 = driver.switchTo().alert();
 		alert1.accept();
+
 		// get the title of the page
-		
-	
+
 		String title1 = driver.getTitle();
 		System.out.println(title1);
-
-		
 
 	}
 
